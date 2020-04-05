@@ -4,8 +4,8 @@
     margin-bottom: 30px;
     position: fixed;
     top: 0;
-    left: 8px;
-    right: 8px;
+    left: 0;
+    right: 0;
 }
 
 .Left {
@@ -32,6 +32,6 @@
     clear: both;
     position: fixed;
     bottom: 0;
-    right: 8px;
-    left: 8px;
+    right: 0;
+    left: 0;
 }
