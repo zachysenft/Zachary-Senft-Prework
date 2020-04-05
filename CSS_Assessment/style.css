@@ -1,0 +1,37 @@
+.Nav {
+    background: grey;
+    text-align: center;
+    margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    left: 8px;
+    right: 8px;
+}
+
+.Left {
+    background: blue;
+    text-align: center;
+    width: 50%;
+    float: left;
+    padding: 16% 0%;
+    margin-top: 40px;
+}
+
+.Right {
+    background: red;
+    text-align: center;
+    width: 25%;
+    float: right;
+    padding: 16% 0%;
+    margin-top: 40px;
+}
+
+.Footer {
+    background: green;
+    text-align: center;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    right: 8px;
+    left: 8px;
+}
