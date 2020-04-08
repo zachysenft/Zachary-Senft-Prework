@@ -1,6 +1,102 @@
-h1 {
-    background: #4aaaa5;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-    color: white;
-    padding: 10px 10px;
+.navbar {
+    padding: 0;
+    border-bottom: #cccccc solid 2px;
+    background-color: #ffffff;
 }
+
+.Name {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 32;
+    background-color: #4AAAA5;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 25px 30px 25px;
+    font-weight: bolder;
+    margin: 0 0 0 9%;
+    
+}
+.navbar-nav {
+    background-color:#ffffff;
+    padding-left: 10%;
+}
+
+#navbarGrouping {
+    margin-left: 40%;
+}
+
+.AMSection{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 5px 5px 5px;
+    border: #dddddd solid 1px;
+    background-color: white;
+    margin: 5% 9% auto 9%;
+    font-size: 20px;
+    color: #777777;
+}
+
+.MiddleSection {
+    margin: 0px 0px 30px 20px;
+}
+
+.MiddleSectionNav {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    border-bottom: #dddddd solid 2px;
+    margin: 20px 0px 20px 0px;
+    padding-bottom: 20px;
+}
+
+.LowerTexts {
+    margin: 15px 15px 0px 0px;
+}
+
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #666666;
+    color: #ffffff;
+    margin: 50px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
+    text-align: center;
+    border-top: #4aaaa5 solid 5px;
+  }
+
+.portfolio-container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Portfolio {
+    margin: 5% -100px auto 9%;
+}
+
+.Identifier {
+    background-color: #4AAAA5;
+    color: #ffffff;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    width: 250px;
+}
+
+.Contact {
+    margin: 30px 100px 30px 115px;
+    background: #ffffff
+}
+
+.InputBoxes {
+    color: #777777;
+}
+
+.Button {
+    background-color: #4AAAA5 ;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 30px;
+    padding: 5px 40px 5px 40px;
+}
+
+body {
+    background: #dddddd;
+  }
