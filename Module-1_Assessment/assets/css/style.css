@@ -28,7 +28,7 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px 5px 5px 5px;
     border: #dddddd solid 1px;
-    background-color: white;
+    background-color: #ffffff;
     margin: 5% 9% auto 9%;
     font-size: 20px;
     color: #777777;
@@ -98,5 +98,6 @@
 }
 
 body {
-    background: #dddddd;
+    background-image: url('../images/trees.png');
+
   }
