@@ -1,11 +1,6 @@
-let randTeam = "";
 let characters = []
-let blanks = 0;
-let autofillin = [];
 let wrong = [];
-let wins = 0;
-let losses = 0;
-let guessLeft = 7;
+wins = 0;
 
 const teams = [
     'tottenham',
@@ -20,43 +15,60 @@ const teams = [
 
 function Game() {
     randTeam = teams[Math.floor(Math.random() * teams.length)];
+    guessLeft = 7;
+    autofillin = [];
     characters = randTeam.split("");
     blanks = characters.length;
     for (var i = 0; i < blanks; i++) {
+
         autofillin.push("_ ");
+
     }
 
     document.getElementById("word").innerHTML = " " + autofillin.join(" ");
     console.log(characters)
 }
 
-function checkLetters(letter) {
-    var lettercheck = false;
+function checker(input) {
+    let lettercheck = false;
     for (var i = 0; i < blanks; i++) {
-        if (randTeam[i] == letter) {
+        if (randTeam[i] == input) {
             lettercheck = true;
         }
     }
 
-    if (lettercheck) {
-        for (var i = 0; i < blanks; i++) {
-            if (randTeam[i] == letter) {
-                autofillin[i] = letter;
+    for (let j = 0; j < wrong.length; j++) {
+        if (wrong[i] == input) {
+            lettercheck = false;
+        }
+    }
+
+    if (lettercheck === false) {
+        wrong.push(input);
+        guessLeft--;
+    }
+
+    if (lettercheck === true) {
+        for (let i = 0; i < blanks; i++) {
+            if (randTeam[i] == input) {
+                autofillin[i] = input;
             }
         }
     }
 
-    else {
-        wrong.push(letter);
-        guessLeft--;
+    if(guessLeft == 0) {
+        randTeam = teams[Math.floor(Math.random() * teams.length)];
+        autofillin = [];
+        characters = [];
+        wins--;
     }
     console.log(autofillin);
 }
 
+
 function reset() {
     autofillin = [];
     wrong = [];
-    guessLeft = 7;
     Game()
 }
 
@@ -70,18 +82,21 @@ function finish() {
         losses++;
         reset()
         document.getElementById("losses").innerHTML = " " + losses;
+        
+        
     }
-    document.getElementById("word").innerHTML = " " + autofillin.join(" ");
     document.getElementById("guessleft").innerHTML = " " + guessLeft;
-}
 
-Game()
+    document.getElementById("word").innerHTML = " " + autofillin.join(" ");
+}
 
 document.onkeyup = function (event) {
     let guesses = String.fromCharCode(event.keyCode).toLowerCase();
-    checkLetters(guesses)
+    checker(guesses)
     console.log(guesses);
     finish();
     
-    document.getElementById("guess").innerHTML = "  " + wrong.join(" ").toUpperCase();
+    document.getElementById("guess").innerHTML = "  " + wrong.join(" ").toLowerCase();
 }
+
+Game()
