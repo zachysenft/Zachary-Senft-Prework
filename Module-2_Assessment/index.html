@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> EPL Hangman Game </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>EPL Soccer Team Hangman!</h1> <h6> Press Any Key to Start! </h6>
+    <h3 class="col offset 10">Wins: <span id="wins"></span></h3>
+
+    <h2> Guess the Word Below: </h2>
+        <h2 id="word" >_ _</h2>
+    </div>
+
+      <div class="row1">
+            <h5> Number of Guesses Remaining:  <span id="guessleft"></span></h5>
+      </div>
+
+      <div class="row2">
+             <h5> Letters Already Guessed: </h5>
+           <span id="guess"></span> 
+      </div>
+
+
+<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>

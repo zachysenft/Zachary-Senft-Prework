@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.png">
+</head>
+    <body>
+        <!--Main Heading-->
+        <div class="heading">
+            <img src ="assets/images/stars.png" height="290px"/>
+        </div>
+        <div class="background">
+            <div class="container">
+                <div>
+                    <img id="image" src="./assets/images/mic2.jpg" width="40%" height="300">
+                </div>
+                 <div class="sidebar">
+                    <h2>Press Any Key To Guess The Stars!</h2></br>
+                     <!--Wins counter Container-->
+                <h2>WINS</h2></br>
+                <span id="winstracker"></span>
+               
+                <!--Current Word Container-->
+                <h2>Current Word</h2>
+        
+                    <h2 id="currentword" >_ _ _ _ _</h2>
+                </div>
+
+                  <!--Wins counter Container-->
+                  <div class="sidebar">
+                   
+                        <h3>Number of guesses remaining:</h3></br>
+                         <span id="guessesremaining"></span></br></br>
+                         <h3>Letters already guessed:</h3></br>
+                            <span id="playerguesses"></span>
+                </div>
+          
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--AUDIO FILES-->
+        <div>
+           
+            <audio id="selenagomez">
+                <source src="./assets/audio/rare.mp3" type="audio/mp3">
+            </audio>
+          
+            <audio id="justinbieber">
+                <source src="./assets/audio/intentions.mp3" type="audio/mp3">
+            </audio>
+         
+            <audio id="billieeilish">
+                <source src="./assets/audio/badguy.mp3" type="audio/mp3">
+            </audio>
+          
+            <audio id="arianagrande">
+                <source src="./assets/audio/Ariana Grande - Break Free 🎵 ft. Zedd.mp3" type="audio/mp3">
+            </audio>
+           
+            <audio id="taylorswift">
+                <source src="./assets/audio/lover.mp3" type="audio/mp3">
+            </audio>
+          
+            <audio id="cardib">
+                <source src="./assets/audio/cardi.mp3" type="audio/mp3">
+            </audio>
+           
+            <audio id="rihanna">
+                <source src="./assets/audio/Work - Rihanna ft. Drake.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+
+
+
+        <script src="assets/javascript/game.js"></script>
+
+    </body>
+
+</html>

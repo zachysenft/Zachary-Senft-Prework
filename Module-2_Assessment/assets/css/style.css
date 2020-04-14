@@ -1,0 +1,21 @@
+ body {
+     background-color: purple;
+     color: white;
+     margin: 30px 30px 30px 50px;
+ }
+
+ .container {
+     text-align: center;
+     border: 3px solid darkcyan;
+     padding: 30px;
+ }
+
+ .row1 {
+     padding-top: 50px;
+     padding-bottom: 50px;
+ }
+
+ .row2 {
+     border: 1px solid white;
+     padding-bottom: 50px;
+ }

@@ -1,0 +1,77 @@
+body {
+    background-image: url("../images/stars.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%
+}
+
+.heading{
+    position: relative;
+    left: 500px;
+    margin-top: 0;
+}
+
+
+h2 {
+    font-family:Arial white, Gadget, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    color: white;
+}
+
+.background{
+   position: relative;
+   right: 150px;
+   padding-top: 300px;
+   
+    
+}
+
+img {
+    margin: 10px;
+    float: left;
+    width: 32%;
+    
+}
+
+
+.sidebar {
+    padding: 5px;
+    position: relative; 
+    margin-bottom: 5px;
+    font-family: Arial white, Gadget, sans-serif;
+    font-size: 12px;
+   color: white;
+}
+
+span {
+   
+    padding-left: 3px;
+    padding-right:3px;
+  
+    font-size: 15px;
+}
+
+
+
+.container { 
+    margin-top: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+#currentword {
+    font-size: 20px;
+    font-family: Arial white, Gadget, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+#scoreboard {
+    padding: 20px;
+}
