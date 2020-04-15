@@ -78,12 +78,10 @@ function finish() {
         document.getElementById("wins").innerHTML = " " + wins;
         reset()
     } 
-    else if (guessLeft === 0) {
+    if (guessLeft === 0) {
         losses++;
         reset()
         document.getElementById("losses").innerHTML = " " + losses;
-        
-        
     }
     document.getElementById("guessleft").innerHTML = " " + guessLeft;
 
@@ -91,12 +89,9 @@ function finish() {
 }
 
 document.onkeyup = function (event) {
-    let guesses = String.fromCharCode(event.keyCode).toLowerCase();
-    checker(guesses)
-    console.log(guesses);
+    let inputs = String.fromCharCode(event.keyCode).toLowerCase();
+    checker(inputs)
     finish();
-    
     document.getElementById("guess").innerHTML = "  " + wrong.join(" ").toLowerCase();
 }
-
 Game()
